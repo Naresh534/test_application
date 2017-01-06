@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   host: 10.11.32.230
-  database: db/development.sqlite3
+  database: dev_database
   pool: 5
   timeout: 5000
 
@@ -16,13 +16,13 @@ development:
 test:
   adapter: postgresql
   host: 10.11.32.230
-  database: db/test.sqlite3
+  database: test_database
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
   host: 10.11.32.230
-  database: db/production.sqlite3
+  database: pro_database
   pool: 5
   timeout: 5000
