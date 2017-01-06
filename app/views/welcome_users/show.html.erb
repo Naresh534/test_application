@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @welcome_user.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @welcome_user.address %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @welcome_user.gender %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @welcome_user.age %>
+</p>
+
+
+<%= link_to 'Edit', edit_welcome_user_path(@welcome_user) %> |
+<%= link_to 'Back', welcome_users_path %>

@@ -1,0 +1,29 @@
+<h1>Listing welcome_users</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Gender</th>
+    <th>Age</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @welcome_users.each do |welcome_user| %>
+  <tr>
+    <td><%= welcome_user.name %></td>
+    <td><%= welcome_user.address %></td>
+    <td><%= welcome_user.gender %></td>
+    <td><%= welcome_user.age %></td>
+    <td><%= link_to 'Show', welcome_user %></td>
+    <td><%= link_to 'Edit', edit_welcome_user_path(welcome_user) %></td>
+    <td><%= link_to 'Destroy', welcome_user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Welcome user', new_welcome_user_path %>
